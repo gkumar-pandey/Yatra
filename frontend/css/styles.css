@@ -108,7 +108,7 @@ footer {
 }
 
 /* activity page css */
-
+ 
 .activity-card {
   color: #000;
   position: relative;
@@ -148,7 +148,7 @@ footer {
 }
 
 .activity-card-image {
-  height: 500px;
+  height: 250px;
   width: 100%;
   cursor: pointer;
   -webkit-transition: 0.2s all;
@@ -193,7 +193,7 @@ footer {
   right: 0;
   z-index: 1;
   margin-top: 16px;
-  margin-right: 8px;
+  margin-right: -4px;
   display: flex;
   justify-content: center;
   align-items: center;
