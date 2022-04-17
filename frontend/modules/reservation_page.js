@@ -25,50 +25,55 @@ function addReservationToTable(reservations) {
  if(reservations.length==0){
   document.getElementById('no-reservation-banner').style.display='block';
   document.getElementById('reservation-table-parent').style.display='none';
-  return;
-   
+  return; 
+ }
+ else {
+   document.getElementById('no-reservation-banner').style.display='none'
+  reservations.forEach(element => {
+    const adventureId =  element.adventure;
+     
+    const  month= ["January","February","March","April","May","June","July",
+    "August","September","October","November","December"];
+     
+     const booking = element.time;
+     let bookingDateAndTimeArr = new Date(booking).toLocaleString().split(',');
+     
+     const bookingTime = bookingDateAndTimeArr[1];
+     const bookingDate = bookingDateAndTimeArr[0].split('/');
+    
+     let bookingMonth;
+     month.map((month,idx)=>{
+         if(bookingDate[0]==(idx+1)){
+           bookingMonth = month
+         }
+     })
+     const bookingData = `${bookingDate[1]} ${bookingMonth} ${bookingDate[2]} ${bookingTime}`
+      
+    
+    //  action btn
+    const actionBtn = `<a href="../detail/?adventure=${adventureId}" ><button class='reservation-visit-button'>Visit Adventure</button></a>`
+     
+     
+     
+     const d = element.date
+     const text= new Date(d).toLocaleDateString('en-IN', { year: 'numeric', month: '2-digit', day: '2-digit' })
+     const row= document.createElement('tr')
+     row.innerHTML = `<td>${element.id}</td>
+     <td>${element.name}</td>
+     <td>${element.adventureName}</td>
+     <td>${element.person}</td>
+      <td>${text}</td>
+     <td>${element.price}</td>
+     <td>${bookingData}</td>
+     <td>${actionBtn}</td>`
+    document.getElementById('reservation-table').appendChild(row)
+     
+   });
+   return;
  }
  
   
- reservations.forEach(element => {
-  const adventureId =  element.adventure;
-  console.log(adventureId)
-  const  month= ["January","February","March","April","May","June","July",
-  "August","September","October","November","December"];
-   
-   const booking = element.time;
-   let bookingDateAndTimeArr = new Date(booking).toLocaleString().split(',');
-   const bookingTime = bookingDateAndTimeArr[0];
-   const bookingDate = bookingDateAndTimeArr[0].split('/');
-  
-   let bookingMonth;
-   month.map((month,idx)=>{
-       if(bookingDate[0]==(idx+1)){
-         bookingMonth = month
-       }
-   })
-   const bookingData = `${bookingDate[0]} ${bookingMonth} ${bookingDate[2]} ${bookingTime}`
-   console.log('this is booking ', bookingData)
-  
-  //  action btn
-  const actionBtn = `<a href="../detail/?adventure=${adventureId}" ><button class='reservation-visit-button'>Visit Adventure</button></a>`
-   
-   
-   
-   const d = element.date
-   const text= new Date(d).toLocaleDateString('en-IN', { year: 'numeric', month: '2-digit', day: '2-digit' })
-   const row= document.createElement('tr')
-   row.innerHTML = `<td>${element.id}</td>
-   <td>${element.name}</td>
-   <td>${element.adventureName}</td>
-   <td>${element.person}</td>
-    <td>${text}</td>
-   <td>${element.price}</td>
-   <td>${bookingData}</td>
-   <td>${actionBtn}</td>`
-  document.getElementById('reservation-table').appendChild(row)
-   
- });
+ 
   //Conditionally render the no-reservation-banner and reservation-table-parent
 
   /*
