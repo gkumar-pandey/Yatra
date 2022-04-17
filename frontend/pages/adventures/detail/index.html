@@ -42,7 +42,10 @@
                             <h1 id="adventure-name"></h1>
                             <p style="font-size: 20px; color: #999" id="adventure-subtitle"></p>
                         </div>
-                        <div class="row mb-3" id="photo-gallery"></div>
+                        <div class="row mb-3" id="photo-gallery">
+                            
+                             
+                        </div>
 
                         <hr />
                         <h5>About the Experience</h5>
@@ -123,7 +126,9 @@
         } from "../../../modules/adventure_details_page.js";
         (async function () {
             let adventureId = await getAdventureIdFromURL(window.location.search);
+             
             let adventureDetails = await fetchAdventureDetails(adventureId);
+            console.log(adventureDetails)
             addAdventureDetailsToDOM(adventureDetails);
             addBootstrapPhotoGallery(adventureDetails.images);
             conditionalRenderingOfReservationPanel(adventureDetails);

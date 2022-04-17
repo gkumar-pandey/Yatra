@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="26" failures="17" time="3.043">
-  <testsuite name="Reservation Page Tests" errors="0" failures="3" skipped="0" timestamp="2022-04-14T20:47:44" time="1.085" tests="3">
-    <testcase classname="Reservation Page Tests Check if fetch call for the reservations was made and data was received" name="Reservation Page Tests Check if fetch call for the reservations was made and data was received" time="0.054">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
-
-Expected number of calls: 1
-Received number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/reservation_page.test.js:28:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+<testsuites name="jest tests" tests="26" failures="4" time="3.131">
+  <testsuite name="Reservation Page Tests" errors="0" failures="1" skipped="0" timestamp="2022-04-17T11:27:41" time="1.21" tests="3">
+    <testcase classname="Reservation Page Tests Check if fetch call for the reservations was made and data was received" name="Reservation Page Tests Check if fetch call for the reservations was made and data was received" time="0.069">
     </testcase>
-    <testcase classname="Reservation Page Tests Catches errors and returns null" name="Reservation Page Tests Catches errors and returns null" time="0.029">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
-
-Expected number of calls: 1
-Received number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/reservation_page.test.js:39:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Reservation Page Tests Catches errors and returns null" name="Reservation Page Tests Catches errors and returns null" time="0.031">
     </testcase>
-    <testcase classname="Reservation Page Tests Adding reservation to table" name="Reservation Page Tests Adding reservation to table" time="0.03">
+    <testcase classname="Reservation Page Tests Adding reservation to table" name="Reservation Page Tests Adding reservation to table" time="0.132">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-Expected: &quot;none&quot;
-Received: &quot;&quot;
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/reservation_page.test.js:50:7)
+Expected: &quot;block&quot;
+Received: &quot;none&quot;
+    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/reservation_page.test.js:80:7)
     at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -31,32 +19,14 @@ Received: &quot;&quot;
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Adventure Detail Page Tests" errors="0" failures="9" skipped="0" timestamp="2022-04-14T20:47:44" time="1.483" tests="9">
-    <testcase classname="Adventure Detail Page Tests Extract city from URL Params" name="Adventure Detail Page Tests Extract city from URL Params" time="0.073">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: &quot;123&quot;
-Received: null
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:58:23)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+  <testsuite name="Adventure Detail Page Tests" errors="0" failures="2" skipped="0" timestamp="2022-04-17T11:27:41" time="1.573" tests="9">
+    <testcase classname="Adventure Detail Page Tests Extract city from URL Params" name="Adventure Detail Page Tests Extract city from URL Params" time="0.081">
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Check if fetch call for the adventure details was made and data was received" name="Adventure Detail Page Tests Check if fetch call for the adventure details was made and data was received" time="0.041">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
-
-Expected number of calls: 1
-Received number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:63:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Adventure Detail Page Tests Check if fetch call for the adventure details was made and data was received" name="Adventure Detail Page Tests Check if fetch call for the adventure details was made and data was received" time="0.038">
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Catches errors and returns null" name="Adventure Detail Page Tests Catches errors and returns null" time="0.039">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
-
-Expected number of calls: 1
-Received number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:74:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Adventure Detail Page Tests Catches errors and returns null" name="Adventure Detail Page Tests Catches errors and returns null" time="0.027">
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Tries adding a Adventure Details - Park" name="Adventure Detail Page Tests Tries adding a Adventure Details - Park" time="0.068">
+    <testcase classname="Adventure Detail Page Tests Tries adding a Adventure Details - Park" name="Adventure Detail Page Tests Tries adding a Adventure Details - Park" time="0.048">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: &quot;Grand Dinyardlodge&quot;
@@ -69,38 +39,14 @@ Received: &quot;&quot;
     at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Check if bootstrap gallery is working" name="Adventure Detail Page Tests Check if bootstrap gallery is working" time="0.03">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 5
-Received: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:118:69)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Adventure Detail Page Tests Check if bootstrap gallery is working" name="Adventure Detail Page Tests Check if bootstrap gallery is working" time="0.066">
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Check if conditional rendering is working" name="Adventure Detail Page Tests Check if conditional rendering is working" time="0.037">
+    <testcase classname="Adventure Detail Page Tests Check if conditional rendering is working" name="Adventure Detail Page Tests Check if conditional rendering is working" time="0.067">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
-Expected: &quot;block&quot;
-Received: &quot;&quot;
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:146:7)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
-    </testcase>
-    <testcase classname="Adventure Detail Page Tests Check if reservation cost is calculated correctly and updated in DOM" name="Adventure Detail Page Tests Check if reservation cost is calculated correctly and updated in DOM" time="0.039">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: &quot;77742&quot;
+Expected: &quot;1000&quot;
 Received: &quot;0&quot;
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:196:67)
+    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:150:74)
     at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -108,120 +54,54 @@ Received: &quot;0&quot;
     at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Check if reservation banner is displayed" name="Adventure Detail Page Tests Check if reservation banner is displayed" time="0.025">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: &quot;block&quot;
-Received: &quot;&quot;
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:218:70)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Adventure Detail Page Tests Check if reservation cost is calculated correctly and updated in DOM" name="Adventure Detail Page Tests Check if reservation cost is calculated correctly and updated in DOM" time="0.029">
     </testcase>
-    <testcase classname="Adventure Detail Page Tests Check if JQuery form submission is taking place" name="Adventure Detail Page Tests Check if JQuery form submission is taking place" time="0.068">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
-
-Expected: &quot;Failed!&quot;
-
-Number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventure_details_page.test.js:262:26)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Adventure Detail Page Tests Check if reservation banner is displayed" name="Adventure Detail Page Tests Check if reservation banner is displayed" time="0.062">
+    </testcase>
+    <testcase classname="Adventure Detail Page Tests Check if JQuery form submission is taking place" name="Adventure Detail Page Tests Check if JQuery form submission is taking place" time="0.049">
     </testcase>
   </testsuite>
-  <testsuite name="Landing Page Tests" errors="0" failures="0" skipped="0" timestamp="2022-04-14T20:47:45" time="0.42" tests="4">
-    <testcase classname="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" name="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" time="0.036">
+  <testsuite name="Adventure Page Tests" errors="0" failures="1" skipped="0" timestamp="2022-04-17T11:27:41" time="1.729" tests="10">
+    <testcase classname="Adventure Page Tests Extract city from URL Params" name="Adventure Page Tests Extract city from URL Params" time="0.091">
     </testcase>
-    <testcase classname="Landing Page Tests fetchCities() - Catches error and returns null, if fetch call fails " name="Landing Page Tests fetchCities() - Catches error and returns null, if fetch call fails " time="0.024">
+    <testcase classname="Adventure Page Tests Check if fetch call for the adventures was made and data was received" name="Adventure Page Tests Check if fetch call for the adventures was made and data was received" time="0.092">
     </testcase>
-    <testcase classname="Landing Page Tests addCityToDOM() - Adds a new city, London with id value of &lt;a&gt; tag set as london" name="Landing Page Tests addCityToDOM() - Adds a new city, London with id value of &lt;a&gt; tag set as london" time="0.022">
+    <testcase classname="Adventure Page Tests Catches errors and returns null" name="Adventure Page Tests Catches errors and returns null" time="0.104">
     </testcase>
-    <testcase classname="Landing Page Tests addCityToDOM() - Correctly links city card to the corresponding Adventures page" name="Landing Page Tests addCityToDOM() - Correctly links city card to the corresponding Adventures page" time="0.044">
+    <testcase classname="Adventure Page Tests Tries adding a new Adventure - Park" name="Adventure Page Tests Tries adding a new Adventure - Park" time="0.038">
+    </testcase>
+    <testcase classname="Adventure Page Tests Check if City Card is linked correctly to Adventures page" name="Adventure Page Tests Check if City Card is linked correctly to Adventures page" time="0.035">
+    </testcase>
+    <testcase classname="Adventure Page Tests Check if filter by duration is working" name="Adventure Page Tests Check if filter by duration is working" time="0.022">
+    </testcase>
+    <testcase classname="Adventure Page Tests Check if filter by category is working" name="Adventure Page Tests Check if filter by category is working" time="0.028">
+      <failure>TypeError: Cannot read property &apos;includes&apos; of undefined
+    at filter (/home/shekhar/Desktop/ QtripDynamics/frontend/modules/adventures_page.js:80:37)
+    at Array.filter (&lt;anonymous&gt;)
+    at filterByCategory (/home/shekhar/Desktop/ QtripDynamics/frontend/modules/adventures_page.js:78:39)
+    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventures_page.test.js:175:18)
+    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="Adventure Page Tests Check if filter by category and filter by duration are both working simultaneously" name="Adventure Page Tests Check if filter by category and filter by duration are both working simultaneously" time="0.041">
+    </testcase>
+    <testcase classname="Adventure Page Tests Check if filter is being added to local storage" name="Adventure Page Tests Check if filter is being added to local storage" time="0.057">
+    </testcase>
+    <testcase classname="Adventure Page Tests Check if filter is being retrieved from local storage" name="Adventure Page Tests Check if filter is being retrieved from local storage" time="0.032">
     </testcase>
   </testsuite>
-  <testsuite name="Adventure Page Tests" errors="0" failures="5" skipped="0" timestamp="2022-04-14T20:47:44" time="1.671" tests="10">
-    <testcase classname="Adventure Page Tests Extract city from URL Params" name="Adventure Page Tests Extract city from URL Params" time="0.118">
+  <testsuite name="Landing Page Tests" errors="0" failures="0" skipped="0" timestamp="2022-04-17T11:27:42" time="0.56" tests="4">
+    <testcase classname="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" name="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" time="0.069">
     </testcase>
-    <testcase classname="Adventure Page Tests Check if fetch call for the adventures was made and data was received" name="Adventure Page Tests Check if fetch call for the adventures was made and data was received" time="0.074">
+    <testcase classname="Landing Page Tests fetchCities() - Catches error and returns null, if fetch call fails " name="Landing Page Tests fetchCities() - Catches error and returns null, if fetch call fails " time="0.021">
     </testcase>
-    <testcase classname="Adventure Page Tests Catches errors and returns null" name="Adventure Page Tests Catches errors and returns null" time="0.058">
+    <testcase classname="Landing Page Tests addCityToDOM() - Adds a new city, London with id value of &lt;a&gt; tag set as london" name="Landing Page Tests addCityToDOM() - Adds a new city, London with id value of &lt;a&gt; tag set as london" time="0.017">
     </testcase>
-    <testcase classname="Adventure Page Tests Tries adding a new Adventure - Park" name="Adventure Page Tests Tries adding a new Adventure - Park" time="0.077">
-    </testcase>
-    <testcase classname="Adventure Page Tests Check if City Card is linked correctly to Adventures page" name="Adventure Page Tests Check if City Card is linked correctly to Adventures page" time="0.029">
-    </testcase>
-    <testcase classname="Adventure Page Tests Check if filter by duration is working" name="Adventure Page Tests Check if filter by duration is working" time="0.049">
-      <failure>TypeError: Cannot read property &apos;sort&apos; of undefined
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventures_page.test.js:137:19)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
-    </testcase>
-    <testcase classname="Adventure Page Tests Check if filter by category is working" name="Adventure Page Tests Check if filter by category is working" time="0.041">
-      <failure>TypeError: Cannot read property &apos;sort&apos; of undefined
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventures_page.test.js:177:19)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
-    </testcase>
-    <testcase classname="Adventure Page Tests Check if filter by category and filter by duration are both working simultaneously" name="Adventure Page Tests Check if filter by category and filter by duration are both working simultaneously" time="0.042">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-- Expected  - 0
-+ Received  + 2
-
-  Array [
-+   &quot;309180719&quot;,
-    &quot;3091807920&quot;,
-+   &quot;3091807921&quot;,
-    &quot;3091807922&quot;,
-  ]
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventures_page.test.js:250:44)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
-    </testcase>
-    <testcase classname="Adventure Page Tests Check if filter is being added to local storage" name="Adventure Page Tests Check if filter is being added to local storage" time="0.035">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
-
-Expected number of calls: 1
-Received number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventures_page.test.js:258:41)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
-    </testcase>
-    <testcase classname="Adventure Page Tests Check if filter is being retrieved from local storage" name="Adventure Page Tests Check if filter is being retrieved from local storage" time="0.02">
-      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
-
-Expected number of calls: 1
-Received number of calls: 0
-    at Object.&lt;anonymous&gt; (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/modules/adventures_page.test.js:267:41)
-    at Object.asyncJestTest (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
-    at /home/shekhar/Desktop/ QtripDynamics/frontend/__tests__/node_modules/jest-jasmine2/build/queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    <testcase classname="Landing Page Tests addCityToDOM() - Correctly links city card to the corresponding Adventures page" name="Landing Page Tests addCityToDOM() - Correctly links city card to the corresponding Adventures page" time="0.014">
     </testcase>
   </testsuite>
 </testsuites>

@@ -57,7 +57,7 @@
                         </tr>
                     </thead>
                     <tbody id="reservation-table">
-
+                         
                     </tbody>
                 </table>
             </div>
@@ -83,6 +83,7 @@
         } from "../../../modules/reservation_page.js";
         (async function () {
             const reservations = await fetchReservations();
+            console.log(reservations)
             addReservationToTable(reservations);
         })();
 

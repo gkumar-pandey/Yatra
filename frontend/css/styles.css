@@ -93,7 +93,7 @@ footer {
 
 .hero-subheading {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 325;
 }
 .hero-input {
   width: 80%;
@@ -135,6 +135,7 @@ footer {
 }
 .activity-card img:hover {
   -webkit-filter: brightness(50%);
+   
   /* transform: scale(1.1); */
 }
 
@@ -148,7 +149,7 @@ footer {
 }
 
 .activity-card-image {
-  height: 250px;
+  height: 500px;
   width: 100%;
   cursor: pointer;
   -webkit-transition: 0.2s all;
@@ -156,6 +157,7 @@ footer {
 }
 .activity-card-image:hover {
   -webkit-filter: brightness(50%);
+  transform: scale(1.1);
 }
 .experience-content ul li {
   margin-left: 16px;
@@ -239,9 +241,11 @@ input[type="number"] {
   align-items: center;
   text-align: center;
   padding: 10px;
+  font-size: 16px;
   white-space: nowrap;
   border-radius: 20px;
   cursor: pointer;
+  border: none;
 }
 .reservation-visit-button:hover {
   background-color: rgb(226, 129, 1);
@@ -261,4 +265,12 @@ input[type="number"] {
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px){
+  .tile-text h5{
+    font-size: 16px;
+  }
+  .tile-text p{
+    font-size: 14px;
+  }
 }
