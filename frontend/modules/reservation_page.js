@@ -29,6 +29,7 @@ function addReservationToTable(reservations) {
  }
  else {
    document.getElementById('no-reservation-banner').style.display='none'
+   document.getElementById('reservation-table-parent').style.display='none';
   reservations.forEach(element => {
     const adventureId =  element.adventure;
      
