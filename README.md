@@ -1,4 +1,4 @@
-# QTrip_Dynamic
+# Yatra
 
 <ul>
 <li> Created web pages using HTML and CSS and made them dynamic using JavaScript</li>
